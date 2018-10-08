@@ -1,0 +1,157 @@
+.ca-menu-bar{
+    padding:0;
+    margin:20px auto
+}
+.ca-menu-bar li{
+    overflow:hidden;
+    position:relative;
+    float:left;
+    background:#F7F7F7;
+    width:200px;
+    height:300px;
+	margin:0 5px 10px;
+	
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	
+    transition:all 300ms linear;
+    -moz-transition:all 300ms linear;
+    -webkit-transition:all 300ms linear;
+    -khtml-transition:all 300ms linear;
+    -o-transition:all 300ms linear;
+    -ms-transition:all 300ms linear
+}
+.ca-menu-bar li:last-child{
+    margin-right:0px
+}
+.ca-menu-bar li a{
+    display:block;
+    position:relative;
+    color:#333;
+    text-align:left;
+    width:100%;
+    height:100%
+}
+.ca-icon-bar{
+    position:absolute;
+    text-align:center;
+    font-size:60px;
+    color:#333;
+    text-shadow:0px 0px 1px #333;
+    line-height:150px;
+    width:100%;
+    height:50%;
+    left:0px;
+    top:0px;
+	
+    transition:all 400ms linear;
+    -moz-transition:all 400ms linear;
+    -webkit-transition:all 400ms linear;
+    -khtml-transition:all 400ms linear;
+    -o-transition:all 400ms linear;
+    -ms-transition:all 400ms linear
+}
+.ca-content-bar{
+    position:absolute;
+    left:0px;
+    width:100%;
+    height:50%;
+    top:50%
+}
+.ca-main-bar{
+    font-size:22px;
+    opacity:0.8;
+    text-align:center;
+	
+    transition:all 200ms linear;
+    -moz-transition:all 200ms linear;
+    -webkit-transition:all 200ms linear;
+    -khtml-transition:all 200ms linear;
+    -o-transition:all 200ms linear;
+    -ms-transition:all 200ms linear
+}
+.ca-sub-bar{
+    text-align:center;
+    font-size:14px;
+	font-weight:normal;
+	font-style:italic;
+    color:#666;
+    line-height:30px;
+    opacity:0.8;
+	
+    transition:all 200ms linear;
+    -moz-transition:all 200ms linear;
+    -webkit-transition:all 200ms linear;
+    -khtml-transition:all 200ms linear;
+    -o-transition:all 200ms linear;
+    -ms-transition:all 200ms linear
+}
+.ca-menu-bar li:hover{
+    background-color:#222
+}
+.ca-menu-bar li:hover .ca-icon-bar{
+    color:#FFF;
+    font-size:90px
+}
+.ca-menu-bar li:hover .ca-main-bar{
+    color:#FFF;
+    -webkit-animation:moveFromLeftRotate 300ms ease;
+    -moz-animation:moveFromLeftRotate 300ms ease;
+    -ms-animation:moveFromLeftRotate 300ms ease
+}
+.ca-menu-bar li:hover .ca-sub-bar{
+    color:#FFF;
+    -webkit-animation:moveFromBottom 500ms ease;
+    -moz-animation:moveFromBottom 500ms ease;
+    -ms-animation:moveFromBottom 500ms ease
+}
+@-webkit-keyframes moveFromLeftRotate{
+    from{
+        -webkit-transform:translateX(-100%) rotate(-90deg)
+    }
+    to{
+        -webkit-transform:translateX(0%) rotate(0deg)
+    }
+}
+@-moz-keyframes moveFromLeftRotate{
+    from{
+        -moz-transform:translateX(-100%) rotate(-90deg)
+    }
+    to{
+        -moz-transform:translateX(0%) rotate(0deg)
+    }
+}
+@-ms-keyframes moveFromLeftRotate{
+    from{
+        -ms-transform:translateX(-100%) rotate(-90deg)
+    }
+    to{
+        -ms-transform:translateX(0%) rotate(0deg)
+    }
+}
+
+@-webkit-keyframes moveFromBottom{
+    from{
+        -webkit-transform:translateY(100%)
+    }
+    to{
+        -webkit-transform:translateY(0%)
+    }
+}
+@-moz-keyframes moveFromBottom{
+    from{
+        -moz-transform:translateY(100%)
+    }
+    to{
+        -moz-transform:translateY(0%)
+    }
+}
+@-ms-keyframes moveFromBottom{
+    from{
+        -ms-transform:translateY(100%)
+    }
+    to{
+        -ms-transform:translateY(0%)
+    }
+}

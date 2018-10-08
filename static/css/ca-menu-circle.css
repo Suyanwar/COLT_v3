@@ -1,0 +1,131 @@
+.ca-menu-circle{
+    padding:0 0 0 50px;
+    margin:20px auto
+}
+.ca-menu-circle li{
+    overflow:hidden;
+    position:relative;
+    float:left;
+    background:#FFF;
+    width:230px;
+    height:230px;
+    margin-left:-48px;
+	margin-bottom:10px;
+    border:10px solid #F7F7F7;
+	
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	
+	border-radius:125px;
+	-moz-border-radius:125px;
+	-webkit-border-radius:125px;
+	-khtml-border-radius:125px;
+	-o-border-radius:125px;
+	-ms-border-radius:125px;
+	
+    transition:all 400ms linear;
+    -moz-transition:all 400ms linear;
+    -webkit-transition:all 400ms linear;
+    -khtml-transition:all 400ms linear;
+    -o-transition:all 400ms linear;
+    -ms-transition:all 400ms linear
+}
+.ca-menu-circle li:last-child{
+    margin-right:0px
+}
+.ca-menu-circle li a{
+    display:block;
+    position:relative;
+    color:#333;
+    text-align:left;
+    width:100%;
+    height:100%
+}
+.ca-icon-circle{
+    position:absolute;
+    font-size:80px;
+    color:#F7F7F7;
+    line-height:60px;
+    text-align:center;
+    width:100%;
+    height:60px;
+    top:30px;
+    left:0px;
+	
+    transition:all 400ms linear;
+    -moz-transition:all 400ms linear;
+    -webkit-transition:all 400ms linear;
+    -khtml-transition:all 400ms linear;
+    -o-transition:all 400ms linear;
+    -ms-transition:all 400ms linear
+}
+.ca-main-circle{
+    position:absolute;
+    font-size:24px;
+	font-weight:normal;
+    opacity:0.8;
+    text-align:center;
+    color:#555;
+    width:170px;
+    height:80px;
+    margin-left:-85px;
+    top:110px;
+    left:50%
+}
+.ca-menu-circle li:hover{
+    z-index:2;
+    border-color:#1AA98A;
+	
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1)
+}
+.ca-menu-circle li:hover .ca-icon-circle{
+    color:#1496BB;
+    font-size:60px;
+    text-shadow:0px 0px 1px #1496BB;
+	
+    -webkit-animation:moveFromBottom 300ms ease;
+    -moz-animation:moveFromBottom 300ms ease;
+    -ms-animation:moveFromBottom 300ms ease
+}
+.ca-menu-circle li:hover .ca-main-circle{
+    color:#1496BB;
+    -webkit-animation:moveFromBottom 500ms ease;
+    -moz-animation:moveFromBottom 500ms ease;
+    -ms-animation:moveFromBottom 500ms ease
+}
+
+@-webkit-keyframes moveFromBottom{
+    from{
+        -webkit-transform:translateY(200%) scale(0.5);
+        opacity:0
+    }
+    to{
+        -webkit-transform:translateY(0%) scale(1);
+        opacity:1    
+    }
+}
+@-moz-keyframes moveFromBottom{
+    from{
+        -moz-transform:translateY(200%) scale(0.5);
+        opacity:0
+    }
+    to{
+        -moz-transform:translateY(0%) scale(1);
+        opacity:1    
+    }
+}
+@-ms-keyframes moveFromBottom{
+    from{
+        -ms-transform:translateY(200%) scale(0.5);
+        opacity:0
+    }
+    to{
+        -ms-transform:translateY(0%) scale(1);
+        opacity:1    
+    }
+}
